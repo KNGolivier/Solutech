@@ -1,31 +1,14 @@
 import { FaGithub, FaFacebook, FaInstagram, FaTwitter } from "react-icons/fa";
 
-// Fonction pour charger les images en toute sécurité
-const loadImage = (path) => {
-  try {
-    return require(`../assets/${path}`);
-  } catch (err) {
-    console.warn(`Image not found: ${path}, using fallback`);
-    // Retourne une image vide si le fichier n'existe pas
-    return 'data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==';
-  }
-};
-
-const logo = loadImage('LOGO.png');
-const heroImg = loadImage('hero.jpg');
-
 export default function Header() {
   return (
     <header className="w-full">
-
       {/* NAVBAR */}
-      <nav className=" top-0 left-0 w-full z-50 bg-gradient-to-r from-[#c3c3c5] to-[#dedfdd] shadow-sm">
+      <nav className="top-0 left-0 w-full z-50 bg-gradient-to-r from-[#c3c3c5] to-[#dedfdd] shadow-sm">
         <div className="flex items-center justify-between px-12 py-6">
-          <img
-            src={logo}
-            alt="Solutech One logo"
-            className="h-7 w-auto object-contain"
-          />
+          <div className="text-2xl font-bold text-gray-800">
+            SOLUTECH
+          </div>
 
           <ul className="flex gap-8 text-sm text-gray-700">
             <li className="cursor-pointer hover:text-blue-600">A propos</li>
