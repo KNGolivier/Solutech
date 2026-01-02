@@ -3,29 +3,29 @@ import { useState } from "react";
 export default function FaqSection() {
   const faqs = [
     {
-      question: "Comment rejoindre solutech-one ?",
+      question: "Quels services propose Solutech-One ?",
       answer:
-        "Pour obtenir un entretien avec Solutech One, vous devez envoyer votre CV, une lettre de motivation, votre casier judiciaire à l’email example@gmail.com",
+        "Solutech-One accompagne les entreprises dans leur transformation digitale en proposant des services en cloud computing, développement d’applications (web, mobile et logiciels métiers) et cybersécurité. Nos solutions sont conçues pour être performantes, sécurisées et adaptées aux besoins spécifiques de chaque organisation.",
     },
     {
-      question: "Quels types de services offrez-vous ?",
+      question: "Comment garantissez-vous la sécurité des données et des systèmes ?",
       answer:
-        "Nous offrons des services de développement web, mobile, UI/UX design, solutions blockchain, maintenance et accompagnement digital.",
+        "La sécurité est au cœur de nos prestations. Nous mettons en place des mécanismes de protection avancés tels que la supervision en temps réel, le chiffrement des communications, la gestion sécurisée des accès et des audits réguliers. Notre approche vise à prévenir les incidents et à assurer la disponibilité et l’intégrité des données.",
     },
     {
-      question: "Besoin de la création d’un site ou d’une maintenance ?",
+      question: "Proposez-vous des solutions sur mesure ?",
       answer:
-        "Nous prenons en charge aussi bien la création complète de votre site que la maintenance et l’amélioration de solutions existantes.",
+        "Oui. Chaque projet débute par une analyse approfondie des besoins du client. Nous concevons ensuite des solutions sur mesure, évolutives et adaptées aux contraintes techniques, fonctionnelles et budgétaires de votre entreprise.",
     },
     {
-      question: "Combien de temps mettez-vous pour développer ?",
+      question: "Assurez-vous la maintenance et le support après la mise en production ?",
       answer:
-        "Les délais varient selon la complexité du projet. En moyenne, un site vitrine prend 2 à 4 semaines.",
+        "Absolument. Nous proposons des services de maintenance, de support technique et de supervision continue afin de garantir le bon fonctionnement, la performance et la sécurité des solutions déployées sur le long terme.",
     },
     {
-      question: "Dans quels types de projets vous êtes spécialisés ?",
+      question: "Comment puis-je obtenir un devis ou démarrer un projet avec vous ?",
       answer:
-        "Nous sommes spécialisés dans les sites vitrines, plateformes web, solutions d’entreprise et projets innovants.",
+        "Il vous suffit de nous contacter via notre formulaire en ligne ou par email. Après un premier échange pour comprendre vos besoins, nous vous proposons une étude personnalisée et un devis détaillé, sans engagement.",
     },
   ];
 
@@ -36,9 +36,8 @@ export default function FaqSection() {
       <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-16 items-start">
 
         {/* LEFT */}
-        <div className="relative">
-         
-
+        <div className="relative ">
+            <div className="absolute -left-50 -top-50 w-72 h-72 rounded-full border-8 border-gray-300/40" />
           <h2 className="relative text-3xl md:text-4xl font-semibold text-gray-900 leading-snug">
             Questions <br /> Fréquemment <br /> Demandés
           </h2>

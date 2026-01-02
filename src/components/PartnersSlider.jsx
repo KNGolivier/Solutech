@@ -1,9 +1,9 @@
 export default function PartnersSlider() {
   const partners = [
-    { name: "ESITECH", logo: "esiitech.png" },
-    { name: "USTM", logo: "Ustm.png" },
-    { name: "CHUL", logo: "chul.png" },
-    { name: "BakoAI", logo: "bakoai.png" },
+    { name: "ESITECH", logo: "/esiitech.png" },
+    { name: "USTM", logo: "/Ustm.png" },
+    { name: "CHUL", logo: "/chul.png" },
+    { name: "BakoAI", logo: "/bakoai.png" },
   ];
 
   return (
@@ -12,7 +12,7 @@ export default function PartnersSlider() {
         
         {/* Title */}
         <p className="text-center text-sm text-gray-600 mb-12">
-          Confiance auprès de plus de <span className="font-medium">1,000</span> dans le monde
+          Confiance auprès de plus de nos partenaires dans le monde
         </p>
 
         {/* Slider */}

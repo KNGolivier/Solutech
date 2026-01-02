@@ -18,9 +18,17 @@ export default function Header() {
             <li className="cursor-pointer hover:text-blue-600">A propos</li>
             <li className="cursor-pointer hover:text-blue-600">Services</li>
             <li className="cursor-pointer hover:text-blue-600">Solutions</li>
-            <li className="cursor-pointer hover:text-blue-600">Projets</li>
+            <li className="cursor-pointer hover:text-blue-600">Témoignages</li>
             <li className="cursor-pointer hover:text-blue-600">Partenaires</li>
+            <li className="cursor-pointer hover:text-blue-600">FAQ</li>
+           
+
           </ul>
+
+  <button className="rounded-full bg-blue-600 px-6 py-2 text-sm font-medium text-white transition hover:bg-blue-700">
+    Nous contacter
+  </button>
+
 
           <div className="flex gap-4 text-gray-600">
             <FaGithub className="cursor-pointer hover:text-black" />
@@ -33,17 +41,20 @@ export default function Header() {
 
       {/* HERO */}
       <section
-        className="w-full h-screen flex items-center justify-center text-center"
+        className=" w-full h-screen flex  justify-center text-center "
         style={{
           backgroundImage: `url(${heroImg})`,
           backgroundSize: "cover",
           backgroundPosition: "center",
         }}
       >
-        <div className="relative z-10">
+       
+
+        {/* Content */}
+        <div className="relative z-10 ">
           <h1 className="text-5xl md:text-6xl font-light tracking-wide">
             <span className="text-blue-600">Innov</span>
-            <span className="text-black">ation Tech</span>
+            <span className="text-blue-600">ation Tech</span>
             <span className="text-blue-600">nologique</span>
           </h1>
 
@@ -52,18 +63,18 @@ export default function Header() {
           </h2>
 
           <p className="max-w-2xl mt-6 mx-auto text-gray-700 text-sm leading-relaxed">
-            Notre technologie de pointe alliant rapidité et sécurité des données.
-            Des solutions innovantes pour répondre à vos besoins technologiques
-            les plus exigeants.
+            Our technology performing fast blockchain (120K TPS) and it has
+            guaranteed AI-based data security. Proof of Stake, its consensus
+            algorithm enables unlimited speeds.
           </p>
 
           <div className="flex gap-6 mt-10 justify-center">
             <button className="px-8 py-3 rounded-full border border-blue-600 text-blue-600 hover:bg-blue-600 hover:text-white transition">
-              Commencer
+              Get started
             </button>
 
             <button className="px-8 py-3 rounded-full border border-gray-800 hover:bg-gray-800 hover:text-white transition">
-              Nos solutions
+              Ecosystems
             </button>
           </div>
         </div>

@@ -13,11 +13,7 @@ export default function TestimonialSection() {
 
           {/* Quote */}
           <p className="text-lg md:text-xl leading-relaxed text-gray-900 max-w-4xl">
-            “ Ne vous pressez jamais : la précipitation trahit un manque de sang-froid.
-            Soyez patient : chaque chose vient à son heure. Attendez le bon moment :
-            flairez l’air du temps, les tendances qui vous porteront au pouvoir.
-            Restez en garde tant que l’heure n’est pas venue et portez l’estocade
-            à point nommé. ”
+           “Solutech-One a su comprendre rapidement nos besoins et nous proposer une solution fiable et parfaitement adaptée à notre infrastructure. Grâce à leur accompagnement, nous avons amélioré la sécurité de nos systèmes et optimisé nos performances. Une équipe sérieuse, réactive et compétente.”
           </p>
 
           {/* Footer */}
@@ -27,7 +23,7 @@ export default function TestimonialSection() {
             <div className="flex items-center gap-4">
               <div className="h-10 w-10 rounded-full bg-gray-300"></div>
               <div>
-                <p className="text-sm font-medium text-gray-900">Mo Nasser</p>
+                <p className="text-sm font-medium text-gray-900">OBAME ESSONO Nasser Mohammed</p>
                 <p className="text-xs text-gray-500">Développeur Fullstack</p>
               </div>
             </div>

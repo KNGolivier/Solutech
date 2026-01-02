@@ -1,45 +1,76 @@
+import { FaPhoneAlt, FaEnvelope, FaMapMarkerAlt } from "react-icons/fa";
+
 export default function Footer() {
   return (
-    <footer className="w-full bg-[#0f5bb5] text-white">
-      {/* Top */}
+    <footer className="w-full bg-[#0A56B3] text-white">
+      
+      {/* TOP */}
       <div className="max-w-7xl mx-auto px-6 py-20">
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-12">
+        <div className="grid grid-cols-1 md:grid-cols-4 gap-12">
 
-          {/* Découvrir */}
+          {/* BRAND */}
           <div>
-            <h3 className="text-sm font-semibold mb-6">Decouvrir</h3>
-            <ul className="space-y-3 text-sm text-white/80">
-              <li className="hover:text-white cursor-pointer">A propos</li>
-              <li className="hover:text-white cursor-pointer">Newsletters</li>
-              <li className="hover:text-white cursor-pointer">Environnement</li>
-              <li className="hover:text-white cursor-pointer">Services</li>
-              <li className="hover:text-white cursor-pointer">PC</li>
-              <li className="hover:text-white cursor-pointer">Contact</li>
+            <h3 className="text-lg font-semibold uppercase">
+              Solutech-One
+            </h3>
+            <p className="mt-4 text-sm text-blue-100 leading-relaxed">
+              Technology innovation is our challenge
+            </p>
+          </div>
+
+          {/* CONTACT */}
+          <div>
+            <h4 className="text-md font-semibold mb-4">
+              Contact
+            </h4>
+
+            <ul className="space-y-3 text-sm text-blue-100">
+              <li className="flex items-center gap-3">
+                <FaPhoneAlt />
+                <span>+241 62 XX XX XX</span>
+              </li>
+              <li className="flex items-center gap-3">
+                <FaEnvelope />
+                <span>solutechone@gmail.com</span>
+              </li>
+              <li className="flex items-center gap-3">
+                <FaMapMarkerAlt />
+                <span>Rue Nkong Akore, Libreville, Gabon</span>
+              </li>
             </ul>
           </div>
 
-          {/* Services */}
+          {/* LIENS UTILES */}
           <div>
-            <h3 className="text-sm font-semibold mb-6">Services</h3>
-            <ul className="space-y-3 text-sm text-white/80">
-              <li className="hover:text-white cursor-pointer">Prestations</li>
-              <li className="hover:text-white cursor-pointer">Maintenances</li>
-              <li className="hover:text-white cursor-pointer">Digitalisations</li>
-            </ul>
-          </div>
+            <h4 className="text-md font-semibold mb-4">
+              Liens utiles
+            </h4>
 
-          {/* Contact */}
-          <div>
-            <h3 className="text-sm font-semibold mb-6">Contact</h3>
-            <ul className="space-y-3 text-sm text-white/80">
+            <ul className="space-y-3 text-sm text-blue-100">
               <li className="hover:text-white cursor-pointer">
-                Nous rejoindre
+                Mon BonDocteur
               </li>
-              <li className="text-white font-medium">
-                +241 765 044 43
+              <li className="hover:text-white cursor-pointer">
+                Le BonContact
               </li>
-              <li className="text-white font-medium">
-                +241 765 044 43
+              <li className="hover:text-white cursor-pointer">
+                Ogouee-Cloud
+              </li>
+            </ul>
+          </div>
+
+          {/* DOCUMENTATION */}
+          <div>
+            <h4 className="text-md font-semibold mb-4">
+              Information légale
+            </h4>
+
+            <ul className="space-y-3 text-sm text-blue-100">
+              <li className="hover:text-white cursor-pointer">
+                Mention légale
+              </li>
+              <li className="hover:text-white cursor-pointer">
+                Politique de confidentialité
               </li>
             </ul>
           </div>
@@ -47,13 +78,13 @@ export default function Footer() {
         </div>
       </div>
 
-      {/* Divider */}
-      <div className="border-t border-white/20"></div>
-
-      {/* Bottom */}
-      <div className="py-6 text-center text-xs text-white/70">
-        © 2026 Solutech-one | Tous les droits réservés
+      {/* BOTTOM */}
+      <div className="border-t border-blue-600">
+        <p className="text-center text-sm py-6 text-blue-100">
+          © 2025 Solutech-One. Tous droits réservés.
+        </p>
       </div>
+
     </footer>
   );
 }
