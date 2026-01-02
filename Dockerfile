@@ -7,10 +7,19 @@ COPY package*.json ./
 COPY vite.config.js ./
 
 # Installation des dépendances (y compris les devDependencies nécessaires pour le build)
-RUN npm ci
+RUN apk add --no-cache imagemagick && \
+    npm ci
 
 # Copie du code source
 COPY . .
+
+# Création des fichiers manquants si nécessaire
+RUN mkdir -p src/assets && \
+    if [ ! -f "src/assets/hero.jpg" ]; then \
+        echo "Création d'un fichier factice pour hero.jpg"; \
+        convert -size 1x1 xc:white -quality 1 src/assets/hero.jpg; \
+        convert -size 1x1 xc:white -quality 1 src/assets/LOGO.png; \
+    fi
 
 # Construction de l'application
 RUN npm run build
