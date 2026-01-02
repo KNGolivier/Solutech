@@ -6,6 +6,10 @@ npm-debug.log
 /dist
 /build
 
+# Inclure les assets nécessaires
+!src/assets/hero.jpg
+!src/assets/LOGO.png
+
 # Fichiers d'environnement
 .env
 .env.*
