@@ -1,4 +1,6 @@
 import { FaGithub, FaFacebook, FaInstagram, FaTwitter } from "react-icons/fa";
+import logo from "../assets/LOGO.png";
+import heroImg from "../assets/Hero.jpg";
 
 export default function Header() {
   return (
@@ -6,9 +8,11 @@ export default function Header() {
       {/* NAVBAR */}
       <nav className="top-0 left-0 w-full z-50 bg-gradient-to-r from-[#c3c3c5] to-[#dedfdd] shadow-sm">
         <div className="flex items-center justify-between px-12 py-6">
-          <div className="text-2xl font-bold text-gray-800">
-            SOLUTECH
-          </div>
+          <img
+            src={logo}
+            alt="Solutech One logo"
+            className="h-7 w-auto object-contain"
+          />
 
           <ul className="flex gap-8 text-sm text-gray-700">
             <li className="cursor-pointer hover:text-blue-600">A propos</li>
@@ -29,17 +33,14 @@ export default function Header() {
 
       {/* HERO */}
       <section
-        className=" w-full h-screen flex items-center justify-center text-center "
+        className="w-full h-screen flex items-center justify-center text-center"
         style={{
           backgroundImage: `url(${heroImg})`,
           backgroundSize: "cover",
           backgroundPosition: "center",
         }}
       >
-       
-
-        {/* Content */}
-        <div className="relative z-10 ">
+        <div className="relative z-10">
           <h1 className="text-5xl md:text-6xl font-light tracking-wide">
             <span className="text-blue-600">Innov</span>
             <span className="text-black">ation Tech</span>
@@ -51,18 +52,18 @@ export default function Header() {
           </h2>
 
           <p className="max-w-2xl mt-6 mx-auto text-gray-700 text-sm leading-relaxed">
-            Our technology performing fast blockchain (120K TPS) and it has
-            guaranteed AI-based data security. Proof of Stake, its consensus
-            algorithm enables unlimited speeds.
+            Notre technologie de pointe alliant rapidité et sécurité des données.
+            Des solutions innovantes pour répondre à vos besoins technologiques
+            les plus exigeants.
           </p>
 
           <div className="flex gap-6 mt-10 justify-center">
             <button className="px-8 py-3 rounded-full border border-blue-600 text-blue-600 hover:bg-blue-600 hover:text-white transition">
-              Get started
+              Commencer
             </button>
 
             <button className="px-8 py-3 rounded-full border border-gray-800 hover:bg-gray-800 hover:text-white transition">
-              Ecosystems
+              Nos solutions
             </button>
           </div>
         </div>
