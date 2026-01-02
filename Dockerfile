@@ -6,8 +6,8 @@ WORKDIR /app
 COPY package*.json ./
 COPY vite.config.js ./
 
-# Installation des dépendances
-RUN npm ci --only=production
+# Installation des dépendances (y compris les devDependencies nécessaires pour le build)
+RUN npm ci
 
 # Copie du code source
 COPY . .
