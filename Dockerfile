@@ -2,20 +2,28 @@
 FROM node:20-alpine AS builder
 WORKDIR /app
 
+# Installation des dépendances système
+RUN apk add --no-cache git
+
 # Copie des fichiers de dépendances
 COPY package*.json ./
-COPY vite.config.js ./
 
-# Installation des dépendances
-RUN npm ci
+# Installation des dépendances (y compris devDependencies)
+RUN npm install
 
 # Copie du code source
 COPY . .
 
 # Création des dossiers et fichiers manquants
 RUN mkdir -p src/assets && \
-    touch src/assets/hero.jpg && \
-    touch src/assets/LOGO.png
+    if [ ! -f "src/assets/hero.jpg" ]; then \
+        echo "Création d'un fichier factice pour hero.jpg"; \
+        echo "Fichier image factice" > src/assets/hero.jpg; \
+    fi && \
+    if [ ! -f "src/assets/LOGO.png" ]; then \
+        echo "Création d'un fichier factice pour LOGO.png"; \
+        echo "Fichier image factice" > src/assets/LOGO.png; \
+    fi
 
 # Construction de l'application avec gestion d'erreur
 RUN npm run build || (echo "Build échoué, tentative avec --force" && npm run build -- --force || true)

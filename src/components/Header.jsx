@@ -1,6 +1,18 @@
 import { FaGithub, FaFacebook, FaInstagram, FaTwitter } from "react-icons/fa";
-import logo from "../assets/LOGO.png";
-import heroImg from "../assets/hero.jpg";
+
+// Fonction pour charger les images en toute sécurité
+const loadImage = (path) => {
+  try {
+    return require(`../assets/${path}`);
+  } catch (err) {
+    console.warn(`Image not found: ${path}, using fallback`);
+    // Retourne une image vide si le fichier n'existe pas
+    return 'data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==';
+  }
+};
+
+const logo = loadImage('LOGO.png');
+const heroImg = loadImage('hero.jpg');
 
 export default function Header() {
   return (
